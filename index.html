@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Simoneta Bijuo – Bijoutería artesanal única. Pulseras, collares, llaveros y accesorios con diseños exclusivos.">
+    <title>Simoneta Bijuo | Bijoutería Artesanal</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div id="announcement-bar">
+        ✨ Envíos a todo el país <span>•</span> Pago en cuotas sin interés <span>•</span> Diseños exclusivos y
+        artesanales ✨
+    </div>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <img src="logo%20instagram.jpeg" alt="Logo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div>
+                    <div class="logo-text">Simoneta Bijuo</div>
+                    <span class="logo-sub">Bijoutería Artesanal</span>
+                </div>
+            </a>
+
+            <nav id="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#hero" class="active">Inicio</a></li>
+                    <li><a href="#promotions">Promociones</a></li>
+                    <li><a href="#categories">Catálogo</a></li>
+                    <li><a href="#payment-info">Pagos</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="search-btn" aria-label="Buscar" title="Buscar">🔍</button>
+                <button class="icon-btn" id="cart-btn" aria-label="Ver carrito">
+                    🛍️
+                    <span id="cart-count" aria-live="polite">0</span>
+                </button>
+                <button class="icon-btn" id="hamburger" aria-label="Menú">☰</button>
+            </div>
+        </div>
+
+        <!-- Mobile nav -->
+        <nav id="mobile-nav" style="display:none; padding: 16px 24px; border-top: 1px solid var(--pink-100);">
+            <ul style="display:flex; flex-direction:column; gap:8px;">
+                <li><a href="#hero"
+                        style="display:block; padding:10px 14px; border-radius:var(--radius-full); font-size:15px; font-weight:500; color:var(--gray-600);">Inicio</a>
+                </li>
+                <li><a href="#promotions"
+                        style="display:block; padding:10px 14px; border-radius:var(--radius-full); font-size:15px; font-weight:500; color:var(--gray-600);">Promociones</a>
+                </li>
+                <li><a href="#categories"
+                        style="display:block; padding:10px 14px; border-radius:var(--radius-full); font-size:15px; font-weight:500; color:var(--gray-600);">Catálogo</a>
+                </li>
+                <li><a href="#payment-info"
+                        style="display:block; padding:10px 14px; border-radius:var(--radius-full); font-size:15px; font-weight:500; color:var(--gray-600);">Pagos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-eyebrow"><span>✨</span> Colección Nueva 2025</div>
+                <h1 class="hero-title">
+                    Bijoutería que<br><em>te hace brillar</em>
+                </h1>
+                <p class="hero-desc">
+                    Pulseras, collares y accesorios artesanales con diseños únicos y exclusivos. Cada pieza hecha con
+                    amor para vos. 💕
+                </p>
+                <div class="hero-actions">
+                    <a href="#categories" class="btn-primary">Ver Catálogo 💎</a>
+                    <a href="#promotions" class="btn-secondary">Ver Promos 🎁</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">+200</span>
+                        <span class="stat-label">Clientas felices</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">50+</span>
+                        <span class="stat-label">Diseños únicos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Artesanal</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrap">
+                <div class="hero-image-blob">
+                    <img src="logo%20instagram.jpeg" alt="Simoneta Bijuo Logo" id="hero-img">
+                </div>
+                <div class="hero-deco deco-1"></div>
+                <div class="hero-deco deco-2"></div>
+                <div class="hero-deco deco-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOTIONS -->
+    <section id="promotions">
+        <div class="container">
+            <p class="hero-eyebrow" style="display:inline-flex; margin-bottom:8px;">🎉 Ofertas Especiales</p>
+            <h2 class="section-title">Promociones del Mes</h2>
+            <p class="section-sub">Aprovechá nuestras ofertas por tiempo limitado ⏳</p>
+
+            <div class="promo-slider-wrap">
+                <div class="promo-slider" id="promo-slider">
+                    <!-- Dynamic Promotions -->
+                </div>
+
+                <div class="slider-controls" id="slider-dots-container">
+                    <button class="slider-arrow" id="promo-prev" aria-label="Anterior">‹</button>
+                    <!-- Dots added by JS -->
+                    <button class="slider-arrow" id="promo-next" aria-label="Siguiente">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestro Catálogo</h2>
+            <p class="section-sub">Filtrá por categoría y encontrá tu pieza favorita 🌸</p>
+
+            <div class="categories-grid">
+                <button class="category-chip active" data-cat="all">
+                    <div class="cat-icon">✨</div>
+                    <span class="cat-label">Todos</span>
+                </button>
+                <button class="category-chip" data-cat="pulseras">
+                    <div class="cat-icon">📿</div>
+                    <span class="cat-label">Pulseras</span>
+                </button>
+                <button class="category-chip" data-cat="collares">
+                    <div class="cat-icon">💎</div>
+                    <span class="cat-label">Collares</span>
+                </button>
+                <button class="category-chip" data-cat="llaveros">
+                    <div class="cat-icon">🔑</div>
+                    <span class="cat-label">Llaveros</span>
+                </button>
+                <button class="category-chip" data-cat="accesorios">
+                    <div class="cat-icon">🌸</div>
+                    <span class="cat-label">Accesorios</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section id="catalog">
+        <div class="container">
+            <div class="catalog-header">
+                <span class="catalog-count" id="catalog-count">Mostrando 12 productos</span>
+                <select class="sort-select" id="sort-select" aria-label="Ordenar por">
+                    <option value="default">Ordenar por: Destacados</option>
+                    <option value="price-asc">Precio: menor a mayor</option>
+                    <option value="price-desc">Precio: mayor a menor</option>
+                    <option value="name">Nombre A-Z</option>
+                </select>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PAYMENT INFO -->
+    <section id="payment-info">
+        <div class="container">
+            <h2 class="section-title">Medios de Pago</h2>
+            <p class="section-sub">Elegí como más te convenga pagar 💳</p>
+            <div class="payment-grid">
+                <div class="payment-item">
+                    <div class="payment-item-icon">💳</div>
+                    <div class="payment-item-name">Tarjeta de Crédito</div>
+                    <div class="payment-item-desc">Visa, Mastercard, Amex · hasta 12 cuotas</div>
+                </div>
+                <div class="payment-item">
+                    <div class="payment-item-icon">📱</div>
+                    <div class="payment-item-name">MercadoPago</div>
+                    <div class="payment-item-desc">Pago rápido y seguro con tu cuenta MP</div>
+                </div>
+                <div class="payment-item">
+                    <div class="payment-item-icon">🏦</div>
+                    <div class="payment-item-name">Transferencia</div>
+                    <div class="payment-item-desc">Transferencia o depósito bancario · CBU/CVU</div>
+                </div>
+                <div class="payment-item">
+                    <div class="payment-item-icon">💵</div>
+                    <div class="payment-item-name">Efectivo</div>
+                    <div class="payment-item-desc">Pago en efectivo contra entrega o acordado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text">Simoneta Bijuo</div>
+                    <p class="footer-tagline">Bijoutería artesanal hecha con amor. Cada pieza es única y especial, igual
+                        que vos. ✨</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/simonetabijuo" target="_blank" class="social-link"
+                            title="Instagram">
+                            <img src="logo%20instagram.jpeg" alt="Instagram" style="width: 20px; height: 20px; border-radius: 4px; object-fit: cover;">
+                        </a>
+                        <a href="#" class="social-link" title="WhatsApp">💬</a>
+                        <a href="#" class="social-link" title="Facebook">📘</a>
+                        <a href="#" class="social-link" title="TikTok">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="#categories">Pulseras</a></li>
+                        <li><a href="#categories">Collares</a></li>
+                        <li><a href="#categories">Llaveros</a></li>
+                        <li><a href="#categories">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Envíos y plazos</a></li>
+                        <li><a href="#">Cambios y devoluciones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/simonetabijuo" target="_blank" style="display: flex; align-items: center; gap: 8px;">
+                            <img src="logo%20instagram.jpeg" alt="Instagram" style="width: 18px; height: 18px; border-radius: 4px;"> @simonetabijuo
+                        </a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">hola@simonetabijuo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Simoneta Bijuo. Todos los derechos reservados.</p>
+                <p style="color:rgba(255,255,255,0.7)">Hecho con 💕 en Argentina | <a href="#" id="admin-login-link"
+                        style="color:#fff; text-decoration:underline; font-weight:600;">🔐 Panel Admin</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT MODAL -->
+    <div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-label="Detalle de producto">
+        <div class="modal-box">
+            <div class="modal-grid">
+                <div class="modal-img-wrap" id="modal-img-wrap">
+                    <!-- Filled by JS -->
+                </div>
+                <div class="modal-body">
+                    <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+                    <div class="modal-cat" id="modal-cat"></div>
+                    <h2 class="modal-name" id="modal-name"></h2>
+                    <div class="modal-stars" id="modal-stars"></div>
+                    <div style="display:flex; align-items:baseline; gap:12px;">
+                        <div class="modal-price" id="modal-price"></div>
+                        <div class="modal-original" id="modal-original"></div>
+                    </div>
+                    <p class="modal-desc" id="modal-desc"></p>
+                    <div class="modal-tags" id="modal-tags"></div>
+                    <div class="modal-actions">
+                        <div class="qty-control" role="group" aria-label="Cantidad">
+                            <button class="qty-btn" id="qty-minus" aria-label="Restar">−</button>
+                            <input type="number" id="modal-qty" value="1" min="1" max="99" aria-label="Cantidad">
+                            <button class="qty-btn" id="qty-plus" aria-label="Sumar">+</button>
+                        </div>
+                        <button class="modal-add-btn" id="modal-add-btn">🛍️ Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CART DRAWER -->
+    <div id="cart-overlay" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+        <div id="cart-drawer">
+            <div class="cart-header">
+                <h2 class="cart-title">🛍️ Mi Carrito</h2>
+                <button class="icon-btn" id="cart-close" aria-label="Cerrar carrito">✕</button>
+            </div>
+            <div class="cart-body" id="cart-body">
+                <div class="cart-empty" id="cart-empty">
+                    <div class="cart-empty-icon">🛒</div>
+                    <p class="cart-empty-text">Tu carrito está vacío</p>
+                    <a href="#categories" class="btn-primary" style="font-size:14px; padding:10px 24px;"
+                        id="go-shop-btn">Ver productos</a>
+                </div>
+                <div class="cart-items" id="cart-items" style="display:none;"></div>
+            </div>
+            <div class="cart-footer" id="cart-footer" style="display:none;">
+                <div class="cart-summary">
+                    <div class="summary-row"><span>Subtotal</span><span id="cart-subtotal">$0</span></div>
+                    <div class="summary-row"><span>Envío</span><span id="cart-shipping">A calcular</span></div>
+                    <div class="summary-total"><span>Total</span><span id="cart-total">$0</span></div>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">💳 Finalizar compra</button>
+                <button class="continue-btn" id="cart-continue-btn">← Seguir comprando</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAYMENT MODAL -->
+    <div id="payment-modal-overlay" role="dialog" aria-modal="true" aria-label="Medios de pago">
+        <div class="payment-box">
+            <div class="payment-header">
+                <h2 class="payment-title">💳 Elegí tu pago</h2>
+                <button class="payment-close" id="payment-modal-close" aria-label="Cerrar">✕</button>
+            </div>
+
+            <div class="payment-methods" id="payment-methods" role="radiogroup" aria-label="Método de pago">
+                <button class="payment-method-btn" data-method="card" role="radio" aria-checked="false">
+                    <div class="pm-icon" style="background:var(--blue-100)">💳</div>
+                    <div class="pm-info">
+                        <div class="pm-name">Tarjeta de Crédito / Débito</div>
+                        <div class="pm-desc">Visa · Mastercard · Amex · hasta 12 cuotas sin interés</div>
+                    </div>
+                    <div class="pm-check"></div>
+                </button>
+                <button class="payment-method-btn" data-method="mp" role="radio" aria-checked="false">
+                    <div class="pm-icon" style="background:var(--blue-50)">📱</div>
+                    <div class="pm-info">
+                        <div class="pm-name">MercadoPago</div>
+                        <div class="pm-desc">Pago rápido con tu cuenta MercadoPago</div>
+                    </div>
+                    <div class="pm-check"></div>
+                </button>
+                <button class="payment-method-btn" data-method="transfer" role="radio" aria-checked="false">
+                    <div class="pm-icon" style="background:var(--green-100)">🏦</div>
+                    <div class="pm-info">
+                        <div class="pm-name">Transferencia Bancaria</div>
+                        <div class="pm-desc">CBU / CVU · acreditación inmediata</div>
+                    </div>
+                    <div class="pm-check"></div>
+                </button>
+                <button class="payment-method-btn" data-method="cash" role="radio" aria-checked="false">
+                    <div class="pm-icon" style="background:var(--green-50)">💵</div>
+                    <div class="pm-info">
+                        <div class="pm-name">Efectivo</div>
+                        <div class="pm-desc">Pago al recibir el pedido o acordado</div>
+                    </div>
+                    <div class="pm-check"></div>
+                </button>
+            </div>
+
+            <!-- Card form -->
+            <div class="payment-form" id="form-card">
+                <div>
+                    <label class="form-label" for="card-name">Nombre en la tarjeta</label>
+                    <input class="form-input" type="text" id="card-name" placeholder="NOMBRE APELLIDO"
+                        autocomplete="cc-name">
+                </div>
+                <div>
+                    <label class="form-label" for="card-number">Número de tarjeta</label>
+                    <input class="form-input" type="text" id="card-number" placeholder="0000 0000 0000 0000"
+                        maxlength="19" autocomplete="cc-number">
+                </div>
+                <div class="form-row">
+                    <div>
+                        <label class="form-label" for="card-exp">Vencimiento</label>
+                        <input class="form-input" type="text" id="card-exp" placeholder="MM/AA" maxlength="5"
+                            autocomplete="cc-exp">
+                    </div>
+                    <div>
+                        <label class="form-label" for="card-cvv">CVV</label>
+                        <input class="form-input" type="text" id="card-cvv" placeholder="•••" maxlength="4"
+                            autocomplete="cc-csc">
+                    </div>
+                </div>
+                <div>
+                    <label class="form-label" for="card-cuotas">Cuotas</label>
+                    <select class="form-input sort-select" id="card-cuotas"
+                        style="width:100%; border-radius:var(--radius-sm);">
+                        <option>1 cuota (sin interés)</option>
+                        <option>3 cuotas (sin interés)</option>
+                        <option>6 cuotas (sin interés)</option>
+                        <option>12 cuotas (sin interés)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- MP form -->
+            <div class="payment-form" id="form-mp">
+                <div>
+                    <label class="form-label" for="mp-email">Email de MercadoPago</label>
+                    <input class="form-input" type="email" id="mp-email" placeholder="tu@email.com"
+                        autocomplete="email">
+                </div>
+                <p
+                    style="font-size:13px; color:var(--gray-400); text-align:center; padding: 12px; background: var(--blue-50); border-radius: var(--radius-sm);">
+                    📱 Te redirigiremos a MercadoPago para completar el pago de forma segura.
+                </p>
+            </div>
+
+            <!-- Transfer form -->
+            <div class="payment-form" id="form-transfer">
+                <div style="background:var(--green-50); padding:20px; border-radius:var(--radius-md);">
+                    <p style="font-size:14px; font-weight:600; color:var(--green-400); margin-bottom:8px;">🏦 Datos para
+                        transferencia:</p>
+                    <p style="font-size:13px; color:var(--gray-600); line-height:1.8;">
+                        <strong>Banco:</strong> Banco Nación<br>
+                        <strong>CBU:</strong> 0110000000000000000000<br>
+                        <strong>Alias:</strong> SIMONETA.BIJUO<br>
+                        <strong>Titular:</strong> Simoneta Bijou
+                    </p>
+                </div>
+                <div>
+                    <label class="form-label" for="transfer-name">Tu nombre completo</label>
+                    <input class="form-input" type="text" id="transfer-name" placeholder="Nombre Apellido"
+                        autocomplete="name">
+                </div>
+            </div>
+
+            <!-- Cash form -->
+            <div class="payment-form" id="form-cash">
+                <div
+                    style="background:var(--green-50); padding:20px; border-radius:var(--radius-md); text-align:center;">
+                    <p style="font-size:40px; margin-bottom:8px;">💵</p>
+                    <p style="font-size:14px; font-weight:600; color:var(--green-400); margin-bottom:4px;">Pago en
+                        efectivo</p>
+                    <p style="font-size:13px; color:var(--gray-600);">Te contactaremos para coordinar el pago y la
+                        entrega. ¡Simple y seguro!</p>
+                </div>
+                <div>
+                    <label class="form-label" for="cash-phone">WhatsApp de contacto</label>
+                    <input class="form-input" type="tel" id="cash-phone" placeholder="+54 11 0000-0000"
+                        autocomplete="tel">
+                </div>
+            </div>
+
+            <div class="payment-total-row">
+                <span>Total a pagar</span>
+                <span id="payment-total-display">$0</span>
+            </div>
+
+            <button class="confirm-btn" id="confirm-payment-btn">✅ Confirmar pedido</button>
+
+            <div class="payment-logos">
+                <span>🔒</span> Compra 100% segura
+                <span>💳</span> <span>📱</span> <span>🏦</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" role="alert" aria-live="assertive">
+        <span id="toast-icon">✅</span>
+        <span id="toast-msg">Producto agregado</span>
+    </div>
+
+    <!-- ORDER SUCCESS -->
+    <div id="order-success" role="alert">
+        <div class="success-icon">🎉</div>
+        <h2 class="success-title">¡Pedido confirmado!</h2>
+        <p class="success-sub">Gracias por tu compra. Te contactaremos pronto para coordinar el envío. 💕</p>
+        <button class="success-back" id="success-back-btn">🛍️ Seguir comprando</button>
+    </div>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div id="admin-login-modal" class="modal-overlay">
+        <div class="payment-box" style="max-width:400px;">
+            <div class="payment-header">
+                <h2 class="payment-title">🔐 Acceso Administrador</h2>
+                <button class="payment-close" id="admin-login-close">✕</button>
+            </div>
+            <div style="padding: 24px;">
+                <label class="form-label" for="admin-pass">Contraseña</label>
+                <input class="form-input" type="password" id="admin-pass" placeholder="Ingresá la clave">
+                <button class="confirm-btn" id="admin-login-btn" style="margin-top:16px;">Entrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN DASHBOARD -->
+    <div id="admin-dashboard-modal" class="modal-overlay">
+        <div class="admin-dashboard-box">
+            <div class="admin-header">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <div class="admin-logo">💎</div>
+                    <h2 class="admin-title">Panel de Administración</h2>
+                </div>
+                <button class="payment-close" id="admin-dash-close">✕</button>
+            </div>
+
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="products">📦 Productos</button>
+                <button class="admin-tab" data-tab="promos">🎉 Promociones</button>
+                <button class="admin-tab" data-tab="settings">⚙️ Configuración</button>
+            </div>
+
+            <div class="admin-content">
+                <!-- Products Tab -->
+                <div id="tab-products" class="admin-tab-content active">
+                    <div class="admin-actions-bar">
+                        <h3>Gestión de Productos</h3>
+                        <button class="btn-primary" id="add-product-btn-admin">+ Nuevo Producto</button>
+                    </div>
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Categoría</th>
+                                    <th>Precio</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-products-list">
+                                <!-- Filled by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Promos Tab -->
+                <div id="tab-promos" class="admin-tab-content">
+                    <div class="admin-actions-bar">
+                        <h3>Gestión de Promociones</h3>
+                        <button class="btn-primary" id="add-promo-btn-admin">+ Nueva Promo</button>
+                    </div>
+                    <div id="admin-promos-list" class="admin-promos-grid">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+
+                <!-- Settings Tab -->
+                <div id="tab-settings" class="admin-tab-content">
+                    <div class="admin-settings-info" style="background:var(--pink-50); padding:20px; border-radius:12px; margin-bottom:24px; border:1px dashed var(--pink-300);">
+                        <h3 style="color:var(--pink-500); margin-bottom:8px;">🚀 Guardado Permanente</h3>
+                        <p style="font-size:14px; color:var(--gray-600); line-height:1.5;">
+                            Para que tus cambios no se borren nunca (y aparezcan en Instagram), sigue estos pasos:
+                            <br>1. Haz clic en <strong>"Copiar Datos de Catálogo"</strong>.
+                            <br>2. Pega ese texto en nuestro chat con Antigravity.
+                            <br>3. Yo actualizaré el código fuente por ti.
+                        </p>
+                    </div>
+                    
+                    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+                        <button class="btn-primary" id="export-data-btn" style="padding:16px 32px;">📋 Copiar Datos de Catálogo</button>
+                        <button class="btn-secondary" id="clear-local-btn" style="color:var(--pink-400); border-color:var(--pink-200);">🗑️ Resetear a Original</button>
+                    </div>
+                    
+                    <textarea id="export-area" readonly
+                        style="width:100%; height:150px; margin-top:16px; font-family:monospace; font-size:12px; padding:12px; border:1px solid var(--pink-100); border-radius:8px; display:none; background:#f9f9f9;"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT EDITOR MODAL -->
+    <div id="product-editor-modal" class="modal-overlay">
+        <div class="payment-box" style="max-width:500px;">
+            <div class="payment-header">
+                <h2 class="payment-title" id="editor-title">📦 Editar Producto</h2>
+                <button class="payment-close" id="editor-close">✕</button>
+            </div>
+            <form id="product-form" style="padding: 24px; display:flex; flex-direction:column; gap:12px;">
+                <input type="hidden" id="edit-product-id">
+                <div>
+                    <label class="form-label">Nombre</label>
+                    <input class="form-input" type="text" id="edit-p-name" required>
+                </div>
+                <div class="form-row">
+                    <div>
+                        <label class="form-label">Categoría</label>
+                        <select class="form-input" id="edit-p-cat">
+                            <option value="pulseras">Pulseras</option>
+                            <option value="collares">Collares</option>
+                            <option value="llaveros">Llaveros</option>
+                            <option value="accesorios">Accesorios</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">Precio</label>
+                        <input class="form-input" type="number" id="edit-p-price" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="form-label">Descripción</label>
+                    <textarea class="form-input" id="edit-p-desc" style="height:80px;"></textarea>
+                </div>
+                <div>
+                    <label class="form-label">Imagen (Subir foto)</label>
+                    <input type="file" id="edit-p-img-file" accept="image/*" style="margin-bottom:8px;">
+                    <div id="img-preview"
+                        style="width:100px; height:100px; border:1px dashed var(--pink-200); border-radius:8px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                        <span style="color:var(--gray-300);">Sin foto</span>
+                    </div>
+                    <input type="hidden" id="edit-p-img-base64">
+                </div>
+                <button type="submit" class="confirm-btn">Guardar Producto</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- PROMO EDITOR MODAL -->
+    <div id="promo-editor-modal" class="modal-overlay">
+        <div class="payment-box" style="max-width:500px;">
+            <div class="payment-header">
+                <h2 class="payment-title">🎉 Editar Promoción</h2>
+                <button class="payment-close" id="promo-editor-close">✕</button>
+            </div>
+            <form id="promo-form" style="padding: 24px; display:flex; flex-direction:column; gap:12px;">
+                <input type="hidden" id="edit-promo-id">
+                <div>
+                    <label class="form-label">Color de fondo</label>
+                    <select class="form-input" id="edit-promo-color">
+                        <option value="pink-card">Rosa</option>
+                        <option value="blue-card">Azul</option>
+                        <option value="green-card">Verde</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form-label">Etiqueta (ej: 🌸 Promo Especial)</label>
+                    <input class="form-input" type="text" id="edit-promo-label" required>
+                </div>
+                <div>
+                    <label class="form-label">Título</label>
+                    <input class="form-input" type="text" id="edit-promo-title" required>
+                </div>
+                <div>
+                    <label class="form-label">Descripción</label>
+                    <textarea class="form-input" id="edit-promo-desc" style="height:60px;"></textarea>
+                </div>
+                <div>
+                    <label class="form-label">Descuento/Icono (ej: 2×1, -20%, 🚚)</label>
+                    <input class="form-input" type="text" id="edit-promo-disc" required>
+                </div>
+                <button type="submit" class="confirm-btn">Guardar Promoción</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js?v=2"></script>
+</body>
+
+</html>
