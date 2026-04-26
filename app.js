@@ -6,10 +6,10 @@
 /// ---- DATA & STATE ----
 const DEFAULT_PRODUCTS = [
   { id: 1, name: "Pulsera Perlas Corazón", category: "pulseras", price: 3000, originalPrice: 6000, desc: "Pulsera elástica de mini perlas blancas con charm corazón plateado.", emoji: "💎", bg: "linear-gradient(135deg, #fff, #fde4ee)", badge: "Más vendido", badgeType: "pink", tags: ["nuevo"], stars: 5, reviews: 0, img: "corazon rosita y perlas.jpg" },
-  { id: 2, name: "pulsera perlas rojas", category: "pulseras", price: 3000, originalPrice: null, desc: "pulsera artesanal con detalles en dorado", emoji: "💎", bg: "linear-gradient(135deg, #fff, #fde4ee)", badge: "Nuevo", badgeType: "green", tags: ["nuevo"], stars: 5, reviews: 0, img: "pulsera-cuentas-pastel.jpg.jpeg" },
+  { id: 2, name: "pulsera perlas rojas", category: "pulseras", price: 3000, originalPrice: null, desc: "pulsera artesanal con detalles en dorado", emoji: "💎", bg: "linear-gradient(135deg, #fff, #fde4ee)", badge: "Nuevo", badgeType: "green", tags: ["nuevo"], stars: 5, reviews: 0, img: "pulsera perlas rojas .jpeg" },
   { id: 3, name: "Pulsera Cuentas Pastel Grande", category: "pulseras", price: 3000, originalPrice: null, desc: "Pulsera elástica con cuentas matte grandes en colores pasteles.", emoji: "💎", bg: "linear-gradient(135deg, #fff, #fde4ee)", badge: "⭐ Favorita", badgeType: "pink", tags: ["nuevo"], stars: 5, reviews: 0, img: "pulsera-cuentas-pastel.jpg.jpeg" },
   { id: 4, name: "Llavero Letra Inicial", category: "llaveros", price: 3200, originalPrice: null, desc: "Llavero con tu letra inicial personalizada. Disponible en todos los colores.", emoji: "💎", bg: "linear-gradient(135deg, #fff, #fde4ee)", badge: "Personalizable", badgeType: "pink", tags: ["nuevo"], stars: 5, reviews: 0, img: "llavero letra inicial.jpeg" },
-  { id: 5, name: "pulsera de fimo ", category: "pulseras", price: 3000, originalPrice: 7500, desc: "pulsera con tonos celestes, de fimo con perlas ", emoji: "💎", bg: "linear-gradient(135deg, #fff, #fde4ee)", badge: "-20%", badgeType: "pink", tags: ["nuevo"], stars: 5, reviews: 0, img: "fimo celeste y perlas.jpg" }
+  { id: 5, name: "pulsera de fimo ", category: "pulseras", price: 3000, originalPrice: 7500, desc: "pulsera con tonos celestes, de fimo con perlas ", emoji: "💎", bg: "linear-gradient(135deg, #fff, #fde4ee)", badge: "-20%", badgeType: "pink", tags: ["nuevo"], stars: 5, reviews: 0, img: "pulsera de fimo.jpeg" }
 ];
 
 const DEFAULT_PROMOS = [
